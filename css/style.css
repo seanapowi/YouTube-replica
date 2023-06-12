@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* reset all HTML elements to defult styel */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* seeting the font-family */
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* The header section */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 15px;    
+}
+
+/* The main element */
+main {
+    height: calc( 100vh - 70px);
+    display: flex;
+    background-color: #f9f9f9;
+
+}
+
+/* Hiding the side scroll on the side-bar */
+
+.side-bar {
+    right: 0%;
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    background-color: rgb(249, 237, 237);
+    overflow-y: hidden;
+    
+}
+
+/* Adding media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .side-bar {
+        display: none;
+    }
+}
+.left #menu {
+    padding: 0 7px;
+    cursor: pointer;
+   }
+
+/* stylng the left section */
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+/* stylng the search section */
+
+.search {
+    display: flex;
+}
+
+.search form {
+    display: flex;
+    border: 1px solid #ddd;
+    height: 45px;
+}
+
+.search input {
+    height: 100%;
+    width: 500px;
+    padding: 10px;
+    border: 0;
+    border-radius: 2px 0 0 2px
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+.search button {
+    height: 100%;
+    width: 60px;
+    border: none;
+}
+
+.mic {
+    margin-top: 10px;
+}
+
+.material-icons {
+    color: rgb(100, 100, 100);
+    padding: 0 7px;
+    cursor: pointer;
+}
