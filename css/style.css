@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/* reset all HTML elements to defult styel */
-
+/* reset all HTML elements to defult style */
 * {
     margin: 0;
     padding: 0;
@@ -78,6 +77,7 @@ img {
     display: flex;
     border: 1px solid #ddd;
     height: 45px;
+    border-radius: 20px 0 0 20px;
 }
 
 .search input {
@@ -85,7 +85,7 @@ img {
     width: 500px;
     padding: 10px;
     border: 0;
-    border-radius: 2px 0 0 2px
+    border-radius: 20px 0 0 20px
 }
 
 input:focus {
@@ -97,6 +97,7 @@ input:focus {
     height: 100%;
     width: 60px;
     border: none;
+    border-radius: 0 20px 20px 0;
 }
 
 .mic {
@@ -108,3 +109,122 @@ input:focus {
     padding: 0 7px;
     cursor: pointer;
 }
+
+.contents {
+    position: relative;
+    display: flex;
+}
+
+/* main video */
+
+.center-vid {
+    position: relative;
+    left: 30%;
+    width: 800px;
+    height: 400px;
+
+      }
+.title {
+    position: relative;
+    left: 30%;
+    margin-top: 10px;
+}
+
+    section {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 60px; 
+        left: 30%;
+        top: 10px;
+    }
+
+    /* Subcscription button */
+    .lower{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 20px;
+        width: 100px;
+        align-content: flex-start;
+        cursor: pointer;
+    }
+
+    /* user profile and caption */
+
+    .user-profile h4 {
+        display: inline;
+    }
+    span {
+        position: relative;
+        display: block;
+    }
+
+    .lower-left {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+
+.lower-left button {
+    border: none;
+    padding: 5px;
+}
+
+.lower-left .up {
+    border-radius: 20px 0 0 20px;
+}
+.lower-left .down{
+    border-radius: 0 20px 20px 0;
+}
+
+.share-button button {
+    display: flex;
+    align-items: start;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.recommend-video {
+    position: relative;
+    display: flex;
+    margin: 20px 10px 20px 0;
+    cursor: pointer;
+  }
+  
+  .recommend-video-title {
+    position: relative;
+    display: block;
+    font-weight: bold;
+  }
+  
+  .video-info-recommend {
+    position: relative;
+    display: block;
+    margin: 5px 0 0 5px;
+  }
+  
+  span .creator-name {
+    display: block;
+    line-height: 80%;
+  }
+
+  .views {
+    position: relative;
+    height: 100px;
+    background-color: bisque;
+    left: 30%;
+    border-radius: 20px;
+  }
+  
+  h5 {
+    position: relative;
+    left: 10px;
+    top: 20px;
+    cursor: pointer;
+
+  }
